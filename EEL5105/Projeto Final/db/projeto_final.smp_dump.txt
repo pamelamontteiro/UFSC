@@ -1,0 +1,22 @@
+
+State Machine - |usertop|controle:ctr|EAtual
+Name EAtual.Result EAtual.Sellect EAtual.Check EAtual.Play EAtual.Sequence EAtual.Setup EAtual.Innit 
+EAtual.Innit 0 0 0 0 0 0 0 
+EAtual.Setup 0 0 0 0 0 1 1 
+EAtual.Sequence 0 0 0 0 1 0 1 
+EAtual.Play 0 0 0 1 0 0 1 
+EAtual.Check 0 0 1 0 0 0 1 
+EAtual.Sellect 0 1 0 0 0 0 1 
+EAtual.Result 1 0 0 0 0 0 1 
+
+State Machine - |usertop|ButtonSync:bsc|BTN0_state
+Name BTN0_state.EsperaSoltar BTN0_state.SaidaAtiva BTN0_state.EsperaApertar 
+BTN0_state.EsperaApertar 0 0 0 
+BTN0_state.SaidaAtiva 0 1 1 
+BTN0_state.EsperaSoltar 1 0 1 
+
+State Machine - |usertop|ButtonSync:bsc|BTN1_state
+Name BTN1_state.EsperaSoltar BTN1_state.SaidaAtiva BTN1_state.EsperaApertar 
+BTN1_state.EsperaApertar 0 0 0 
+BTN1_state.SaidaAtiva 0 1 1 
+BTN1_state.EsperaSoltar 1 0 1 

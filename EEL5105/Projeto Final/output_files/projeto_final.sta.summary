@@ -1,0 +1,85 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLK_50'
+Slack : -8.904
+TNS   : -244.767
+
+Type  : Slow Model Setup 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : -0.133
+TNS   : -0.367
+
+Type  : Slow Model Hold 'CLK_50'
+Slack : -0.738
+TNS   : -5.904
+
+Type  : Slow Model Hold 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'CLK_50'
+Slack : -1.173
+TNS   : -72.566
+
+Type  : Slow Model Recovery 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : -0.602
+TNS   : -2.408
+
+Type  : Slow Model Removal 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : 1.233
+TNS   : 0.000
+
+Type  : Slow Model Removal 'CLK_50'
+Slack : 1.249
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLK_50'
+Slack : -1.380
+TNS   : -80.380
+
+Type  : Slow Model Minimum Pulse Width 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Setup 'CLK_50'
+Slack : -3.248
+TNS   : -71.929
+
+Type  : Fast Model Setup 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLK_50'
+Slack : -0.732
+TNS   : -5.856
+
+Type  : Fast Model Hold 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'CLK_50'
+Slack : -0.112
+TNS   : -3.501
+
+Type  : Fast Model Recovery 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast Model Removal 'CLK_50'
+Slack : 0.682
+TNS   : 0.000
+
+Type  : Fast Model Removal 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : 0.684
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLK_50'
+Slack : -1.380
+TNS   : -80.380
+
+Type  : Fast Model Minimum Pulse Width 'datapath:dtp|Div_Freq_DE2:divfreq|CLK_1Hz'
+Slack : -0.500
+TNS   : -4.000
+
+------------------------------------------------------------

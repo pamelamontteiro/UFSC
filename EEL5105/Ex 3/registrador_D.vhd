@@ -1,0 +1,1 @@
+library ieee;use ieee.std_logic_1164.all;entity registrador_D is port (CLK, RST: in std_logic;D: in std_logic_vector(3 downto 0);Q: out std_logic_vector(3 downto 0));end registrador_D;architecture behv of registrador_D isbeginprocess(CLK, D, RST)beginif RST = '1' thenQ <= "0000";elsif (CLK'event and CLK = '1') thenQ <= D;end if;end process;end behv;
