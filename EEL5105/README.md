@@ -18,15 +18,29 @@ conforme segue:
 
 • <b>HEX6</b> e <b>HEX5</b> indicam o sinal e o valor da entrada A, respectivamente;
 
-• HEX4 indica a operação selecionada: soma ou subtração (sı́mbolo + ou −);
+• <b>HEX4</b> indica a operação selecionada: soma ou subtração (sı́mbolo + ou −);
 
-• HEX3 o mostra o valor a ser somado ou subtraı́do atendendo a seleção de C (conforme tabela de operações da Figura);
+• <b> HEX3</b> o mostra o valor a ser somado ou subtraı́do atendendo a seleção de C (conforme tabela de operações da Figura);
 
-• HEX2 indica um sı́mbolo de igualdade (=);
+• <b> HEX2</b> indica um sı́mbolo de igualdade (=);
 
-• HEX1 e HEX0 indicam o sinal e o valor do resultado (dado pelo vetor F ), respectivamente.
+• <b> HEX1</b> e <b> HEX0</b> indicam o sinal e o valor do resultado (dado pelo vetor F ), respectivamente.
 
 <img src="Ex 2/Ex_2.png">
+
+
+<br><br>
+<b>
+[Parte 2] </b> Obter uma solução otimizada sem o uso de multiplexadores. Para evitar o
+uso do multiplexador 4 : 1, tente fazer as quatro operações redistribuindo os bits de C
+em uma única operação de soma (Dica: ver exemplo similar na Figura seguinte). Para a
+redistribuição dos bits podem ser usados operadores & (encadeamento) e portas NOT.
+Para evitar o uso dos multiplexadores 2 : 1 use a mesma abordagem, redistribuindo
+os bits de seleção em um único vetor de entrada.
+
+<br>
+<img src="Ex 2/Ex2.2.png">
+
 
 #
 <b>Exercicio 3 </b>
@@ -59,21 +73,20 @@ H – 0 → 6 → 1 → 8 → 9 → 3 → d → F → 0...
 </p>
 <img src="Ex 3/Circuitos/Diagrama_de_estados.jpeg">
 
-
-
+<br>
 <p align="center"> 
 <b> Codificão de estados e Tabela de transição de Estados </b>
 </p>
 
 <img src="Ex 3/Circuitos/Tabela_transição_estados.jpeg">
 
-
+<br> 
 <p align="center"> 
 <b> Mapas para obter circuito lógico do próximo estado e saı́das</b>
 </p>
 
 
-Os proximos estados N3, N2, N1 e N0 e o Mapa de karnaugh de cada  (PE)com seus expectivos Circuitos.
+Os proximos estados N3, N2, N1 e N0 e o Mapa de karnaugh de cada  (PE) com seus expectivos Circuitos.
 
 <img src="Ex 3/Circuitos/N3.jpeg">
 <img src="Ex 3/Circuitos/N2.jpeg">
