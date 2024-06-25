@@ -64,13 +64,7 @@ reset em KEY (0). A sequência deve ser mostrada numa saı́da S de 4 bits em fo
 
 #
 Minha sequências foi o H : 
-<p align="center"> 
-H – 0 → 6 → 1 → 8 → 9 → 3 → d → F → 0...
-</p>
 
-<p align="center">
-<b> Diagrama de estados</b>
-</p>
 <img src="Ex 3/Circuitos/Diagrama_de_estados.jpeg">
 
 <br>
