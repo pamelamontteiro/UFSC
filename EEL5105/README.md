@@ -40,7 +40,26 @@ os bits de seleção em um único vetor de entrada.
 
 <br>
 <img src="Ex 2/Ex2.2.png">
+ 
+ <br>
+ <b>
+ -> Logica da Otimização da parte 2 - VHDl
+ </b>
+ 
+ ```vhdl
 
+A <= SW(3 downto 0);
+C <= SW(9 downto 8);
+
+V <= C(1) & '1' & C(1) & C(0);
+
+HEX2 <= "0110111";
+HEX6 <= not A(3) & "111111";
+HEX1 <= not F(3) & "111111" ;
+HEX4 <= "0" & C(1) & C(1) & "1111";
+F <= A + V;
+
+ ```
 
 #
 <b>Exercicio 3 </b>
