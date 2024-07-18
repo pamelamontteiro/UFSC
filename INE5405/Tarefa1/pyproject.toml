@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "probabilidade"
+version = "0.1.0"
+description = ""
+authors = ["Pamela monteiro"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.1"
+matplot = "^0.1.9"
+seaborn = "^0.13.2"
+black = "^24.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
