@@ -5,12 +5,12 @@ Esta Aplicação foi realizado como Projeto Final da disciplina Programação Or
 
 <div align="center">
     <div style="display: flex; align-items: center;">
-        <img src="Projeto Final/agenda.gif">
+        <img src="./agenda.gif">
     </div>
 </div>
 
 
- 
+
 
 ## Reference Smile - Sistema de agendamentamento para consultas dentárias
 
@@ -21,7 +21,7 @@ Reference Smile é um sistema para gerenciamento de consultas dentárias, onde d
 
 <div align="center">
     <div style="display: flex; align-items: center;">
-        <img src="./Projeto_final/Screenshots/tela_inicial.png">
+        <img src="./Agenda_dentista/Screenshots/tela_inicial.png">
     </div>
 
 
@@ -33,10 +33,11 @@ A tela de inicial é o primeiro contato do usuário com a aplicação. O usuári
 <br> 
 <div align="center">
     <div style="display: flex; align-items: center;">
-        <img src="./Projeto_final/Screenshots/Tela2.png" width="51%" style="margin-right:10px">
-         <img src="./Projeto_final/Screenshots/Tela3.png" width="59%">
+        <img src="Agenda_dentista/Screenshots/Tela2.png" width="51%" style="margin-right:10px">
+         <img src="./Agenda_dentista/Screenshots/Tela3.png" width="51%">
     </div>
 <br>
+
 A segunda tela depende se ele e cliente ou dentista. Caso seja cliente, o usuário terá dois botões com as suas possíveis ações: <br>
 
 <b> - Adicionar Cliente</b>- Fazer o Cadastro do cliente. <br>
@@ -46,7 +47,6 @@ A segunda tela depende se ele e cliente ou dentista. Caso seja cliente, o usuár
 Caso seja <b>Dentista</b>, o usuário terá dois botões com as suas possíveis ações:<br> 
 <b> - Adicionar Dentista</b> - Fazer o Cadastro do Dentista e seu Horário de atendimento. <br>
 <b> - Verificar consulta</b> - Visualizar os horários de atendimentos dos pacientes (Clientes).
-
 
 ## Tecnologias Utilizadas:
 - Lógica de Programação: Python e Programação Orientada de Objetos.
