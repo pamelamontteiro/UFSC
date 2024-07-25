@@ -28,26 +28,6 @@ Reference Smile é um sistema para gerenciamento de consultas dentárias, onde d
 <br> 
 A tela de inicial é o primeiro contato do usuário com a aplicação. O usuário vai identificar como cliente ou como dentista. Caso ele se identifica como dentista ele vai se encaminhado para pagina do dentista. Caso contrario ele vai se encaminhado para pagina do cliente para agendar as consultas.
 
-## Tela 2 - Tela de direncionamento (Cliente ou Dentista)
-
-<br> 
-<div align="center">
-    <div style="display: flex; align-items: center;">
-        <img src="Agenda_dentista/Screenshots/Tela2.png" width="51%" style="margin-right:10px">
-         <img src="./Agenda_dentista/Screenshots/Tela3.png" width="51%">
-    </div>
-<br>
-
-A segunda tela depende se ele e cliente ou dentista. Caso seja cliente, o usuário terá dois botões com as suas possíveis ações: <br>
-
-<b> - Adicionar Cliente</b>- Fazer o Cadastro do cliente. <br>
-
-<b> - Agendar consulta</b> - Só depois de realizar o cadastro.<br><br>
-
-Caso seja <b>Dentista</b>, o usuário terá dois botões com as suas possíveis ações:<br> 
-<b> - Adicionar Dentista</b> - Fazer o Cadastro do Dentista e seu Horário de atendimento. <br>
-<b> - Verificar consulta</b> - Visualizar os horários de atendimentos dos pacientes (Clientes).
-
 ## Tecnologias Utilizadas:
 - Lógica de Programação: Python e Programação Orientada de Objetos.
 - Interface Gráfica: Tkinter para criação das telas de interação com o usuário.
