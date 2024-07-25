@@ -1,10 +1,16 @@
 # Introdução a Programação Orientada a Objetos com Python [INE5402]
 
-Repository of codes created in the discipline of Introduction to Object Oriented Programming in the semester of 2024.1 at UFSC
+Esta disciplina abrange aulas teóricas e práticas, ministradas nos laboratórios. Durante as práticas, aprendemos a programar em Python.
 
+## Exercicios
 
-## Linguagem de Programação
-- Python
+| Código  | Disciplina                | Nota | Funciona|
+| ------  | :-----------------------: | ---- | ------- |
+| Prova 1    | [Exercicio 1 ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402/Ex%201) | Nota: 10 | Sim |
+| Prova 2   | [Exercicio 2 ](https://github.com/pamelamontteiro/UFSC/tree/main/EEL5105/Ex%202) | Nota: 10 | Sim |
+| Prova 3    | [Exercicio 3 ](https://github.com/pamelamontteiro/UFSC/tree/main/EEL5105/Ex%203) | Nota: 10 | Sim |
+| Prova 4   | [Exercicio 4 ](https://github.com/pamelamontteiro/UFSC/tree/main/EEL5105/Ex%204) | Nota: 10 | Sim |
+| Projeto Final   | [Projeto Final ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402/Projeto_final) | Nota: 10 | Sim |
 
 ## Elementos de programação imperativa:
 - Variáveis simples
