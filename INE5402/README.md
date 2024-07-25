@@ -7,6 +7,9 @@ Esta disciplina abrange aulas teóricas e práticas, ministradas nos laboratóri
 | Código  | Disciplina                | Nota | Funciona|
 | ------  | :-----------------------: | ---- | ------- |
 | Prova 1 | [Prova I](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402/Iniciante%20-%20beecrowd%20/Prova%20I)| Nota: 10 | Sim |
+| Prova 2 | [Prova II](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402/Iniciante%20-%20beecrowd%20/Prova%20II)| Nota: 10 | Sim |
+| Prova 3| [Prova III](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402/Iniciante%20-%20beecrowd%20/Prova%20III)| Nota: 10 | Sim |
+| Prova 4 | [Prova IV](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402/Iniciante%20-%20beecrowd%20/Prova%20IV)| Nota: 10 | Sim |
 | Projeto Final   | [Projeto Final ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402/Projeto_final) | Nota: 10 | Sim |
 
 ## Elementos de programação imperativa:
