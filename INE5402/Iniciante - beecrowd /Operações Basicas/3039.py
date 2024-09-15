@@ -3,7 +3,7 @@ carrinhos = 0
 bonecas = 0
 for i in range(numero_criancas):
     nome, genero = input().split()
-    if genero == 'F':
+    if genero == "F":
         bonecas += 1
     else:
         carrinhos += 1

@@ -6,6 +6,6 @@ width = X // A
 length = Y // B
 height = Z // C
 
-maximo = width*length *height
+maximo = width * length * height
 
-print(f'{maximo}')
+print(f"{maximo}")

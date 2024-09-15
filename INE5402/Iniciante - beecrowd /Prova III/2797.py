@@ -4,7 +4,7 @@ def verificar_fileiro_do_lado(provas):
         fileira_da_esquerda = i - 1
         fileira_da_direita = i + 1
         if 1 in provas[i] or 2 in provas[i]:
-            if fileira_da_esquerda >= 0: 
+            if fileira_da_esquerda >= 0:
                 if 1 in provas[fileira_da_esquerda] or 2 in provas[fileira_da_esquerda]:
                     tudo_ok = False
                     break
@@ -14,6 +14,7 @@ def verificar_fileiro_do_lado(provas):
                     tudo_ok = False
                     break
     return tudo_ok
+
 
 def verificar_provas_iguais(provas, c):
     tudo_ok = True
@@ -40,6 +41,6 @@ for i in range(n):
 provas = list(map(list, zip(*provas)))
 
 if verificar_fileiro_do_lado(provas) and verificar_provas_iguais(provas, c):
-    print('S')
+    print("S")
 else:
-    print('N')
+    print("N")

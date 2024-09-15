@@ -21,6 +21,12 @@ if operacao == "S":
     print(f"{sum(somas):.1f}")
 
 elif operacao == "M":
-    medias = primeira_linha[1:11] + segunda_linha[2:10] + terceira_linha[3:9] + quarta_linha[4:8] + quinta_linha[5:7]
+    medias = (
+        primeira_linha[1:11]
+        + segunda_linha[2:10]
+        + terceira_linha[3:9]
+        + quarta_linha[4:8]
+        + quinta_linha[5:7]
+    )
     media = sum(medias) / 30
     print(f"{media:.1f}")

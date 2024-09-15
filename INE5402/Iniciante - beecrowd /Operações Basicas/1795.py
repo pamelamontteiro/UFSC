@@ -1,3 +1,3 @@
 r = int(input())
-soma=3**r
-print(f'{soma}')
+soma = 3**r
+print(f"{soma}")

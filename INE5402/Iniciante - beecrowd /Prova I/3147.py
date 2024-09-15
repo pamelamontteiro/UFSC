@@ -1,4 +1,4 @@
-'''A Batalha dos Cinco Exércitos'''
+"""A Batalha dos Cinco Exércitos"""
 
 h, e, a, o, w, x = input().split()
 h = int(h)

@@ -1,4 +1,4 @@
-'''Parcelamento Sem Juros'''
+"""Parcelamento Sem Juros"""
 
 valor = int(input())
 parcelas = int(input())

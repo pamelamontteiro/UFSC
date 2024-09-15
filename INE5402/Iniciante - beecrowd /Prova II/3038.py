@@ -1,5 +1,5 @@
-criptografia = ['@','&','!','*','#']
-traducao = ['a','e','i','o','u']
+criptografia = ["@", "&", "!", "*", "#"]
+traducao = ["a", "e", "i", "o", "u"]
 while True:
     try:
         texto_criptografado = input()

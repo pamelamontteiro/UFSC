@@ -1,6 +1,6 @@
-a=int(input())
-b=int(input())
+a = int(input())
+b = int(input())
 
-diferenca=a-b
+diferenca = a - b
 
-print(f'{diferenca}')
+print(f"{diferenca}")

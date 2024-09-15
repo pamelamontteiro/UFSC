@@ -1,7 +1,7 @@
-t=int(input())
+t = int(input())
 
-link3=t
-link2=t*2
-link1=link2*2
+link3 = t
+link2 = t * 2
+link1 = link2 * 2
 
-print(f'{link1}')
+print(f"{link1}")

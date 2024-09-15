@@ -21,6 +21,7 @@ class Grouping:
     def __repr__(self):
         return f"{self.lower:5.2f} |- {self.upper:5.2f}"
 
+
 class BaseStatsCalculator(ABC):
     def __init__(self, df, column_name):
         self.df = df
@@ -37,14 +38,16 @@ class BaseStatsCalculator(ABC):
 
         self.num_class = int(round(self.num_class, 0))
 
-        self.spec = pd.DataFrame({
-            "N": [self.N],
-            "min": [self.min],
-            "max": [self.max],
-            "R": [self.R],
-            "num classes": [self.num_class],
-            "C": [self.C],
-        })
+        self.spec = pd.DataFrame(
+            {
+                "N": [self.N],
+                "min": [self.min],
+                "max": [self.max],
+                "R": [self.R],
+                "num classes": [self.num_class],
+                "C": [self.C],
+            }
+        )
 
         self.model = {
             "k": [],
@@ -62,7 +65,9 @@ class BaseStatsCalculator(ABC):
         for i in range(self.num_class):
             k = i + 1
             classe = Grouping(self.min + self.C * i, self.min + self.C * (i + 1))
-            freq = len([value for value in self.df[self.column_name] if value in classe])
+            freq = len(
+                [value for value in self.df[self.column_name] if value in classe]
+            )
             pi = freq / self.N
             Pi += pi
             Xi = classe.midpoint()
@@ -76,47 +81,81 @@ class BaseStatsCalculator(ABC):
             self.model["Pi"].append(Pi)
             self.model["Xi"].append(Xi)
             self.model["Xi*pi"].append(Xi_pi)
-        
+
         self.weighted_average = sum(self.model["Xi*pi"])
         self.simple_average = self.df[self.column_name].mean()
 
         for i in range(self.num_class):
-            di_2_pi = (self.model["Xi"][i] - self.weighted_average)**2 * self.model["pi"][i]
+            di_2_pi = (self.model["Xi"][i] - self.weighted_average) ** 2 * self.model[
+                "pi"
+            ][i]
             self.model["di^2*pi"].append(di_2_pi)
 
         self.model = pd.DataFrame(self.model)
 
         self.var = sum(self.model["di^2*pi"])
         self.desvpad = math.sqrt(self.var)
-        self.erro_relativo_agrupamento = 100.0 * abs(self.simple_average - self.weighted_average) / self.simple_average
+        self.erro_relativo_agrupamento = (
+            100.0
+            * abs(self.simple_average - self.weighted_average)
+            / self.simple_average
+        )
         self.cv = self.desvpad / self.weighted_average
-        self.moda = self.model['Xi'][self.model['Freq'].idxmax()]
+        self.moda = self.model["Xi"][self.model["Freq"].idxmax()]
         self.assimetria = (self.weighted_average - self.moda) / self.desvpad
 
-        self.descriptive_measures = pd.DataFrame({
-            "Media simples": [self.simple_average],
-            "Media ponderada": [self.weighted_average],
-            "var": [self.var],
-            "desvpad": [self.desvpad],
-            "erro relativo agrupamento": [self.erro_relativo_agrupamento],
-            "cv": [self.cv],
-            "moda": [self.moda],
-            "assimetria": [self.assimetria],
-        })
+        self.descriptive_measures = pd.DataFrame(
+            {
+                "Media simples": [self.simple_average],
+                "Media ponderada": [self.weighted_average],
+                "var": [self.var],
+                "desvpad": [self.desvpad],
+                "erro relativo agrupamento": [self.erro_relativo_agrupamento],
+                "cv": [self.cv],
+                "moda": [self.moda],
+                "assimetria": [self.assimetria],
+            }
+        )
 
     def __repr__(self) -> str:
-        return str(pd.concat([pd.DataFrame(self.df[self.column_name].values, columns=[self.column_name]), self.spec, self.model, self.descriptive_measures], axis=1))
-    
+        return str(
+            pd.concat(
+                [
+                    pd.DataFrame(
+                        self.df[self.column_name].values, columns=[self.column_name]
+                    ),
+                    self.spec,
+                    self.model,
+                    self.descriptive_measures,
+                ],
+                axis=1,
+            )
+        )
+
     def to_csv(self, name):
-        pd.DataFrame(pd.concat([pd.DataFrame(self.df[self.column_name].values, columns=[self.column_name]), self.spec, self.model, self.descriptive_measures], axis=1)).to_csv(name)
+        pd.DataFrame(
+            pd.concat(
+                [
+                    pd.DataFrame(
+                        self.df[self.column_name].values, columns=[self.column_name]
+                    ),
+                    self.spec,
+                    self.model,
+                    self.descriptive_measures,
+                ],
+                axis=1,
+            )
+        ).to_csv(name)
 
     @abstractmethod
     def calculate_num_class(self):
         pass
 
+
 class RaizNCalculator(BaseStatsCalculator):
     def calculate_num_class(self):
         self.num_class = math.ceil(math.sqrt(self.N))
+
 
 class SturgesCalculator(BaseStatsCalculator):
     def calculate_num_class(self):
@@ -127,12 +166,12 @@ def make_histogram(dataframes, column):
     plt.figure(figsize=(10, 6))
 
     for df in dataframes:
-        plt.hist(df[column], bins='sturges', alpha=0.5, label=df["Marca"].iloc[0])
+        plt.hist(df[column], bins="sturges", alpha=0.5, label=df["Marca"].iloc[0])
 
     plt.legend()
-    plt.title('Histogramas Comparativos')
-    plt.xlabel('Valor')
-    plt.ylabel('Frequência')
+    plt.title("Histogramas Comparativos")
+    plt.xlabel("Valor")
+    plt.ylabel("Frequência")
 
     plt.show()
 
@@ -140,32 +179,70 @@ def make_histogram(dataframes, column):
 def make_boxplot(dataframes, column):
     plt.figure(figsize=(8, 6))
 
-    boxplot_elements = plt.boxplot([dataframe[column] for dataframe in dataframes],
-                labels=["REGIOES"])
+    boxplot_elements = plt.boxplot(
+        [dataframe[column] for dataframe in dataframes], labels=["REGIOES"]
+    )
 
-    for i, box in enumerate(boxplot_elements['boxes']):
-        y_min = boxplot_elements['caps'][2*i].get_ydata()[0]
-        y_max = boxplot_elements['caps'][2*i + 1].get_ydata()[0]
+    for i, box in enumerate(boxplot_elements["boxes"]):
+        y_min = boxplot_elements["caps"][2 * i].get_ydata()[0]
+        y_max = boxplot_elements["caps"][2 * i + 1].get_ydata()[0]
         y_q1 = box.get_ydata()[1]
         y_q3 = box.get_ydata()[2]
-        y_med = boxplot_elements['medians'][i].get_ydata()[1]
+        y_med = boxplot_elements["medians"][i].get_ydata()[1]
         x_pos = box.get_xdata()[0]
-        
-        plt.text(x_pos, y_min, f'{y_min:.2f}', verticalalignment='top', fontsize=8, color='red')
-        plt.text(x_pos, y_max, f'{y_max:.2f}', verticalalignment='bottom', fontsize=8, color='red')
-        plt.text(x_pos, y_q1, f'{y_q1:.2f}', verticalalignment='top', fontsize=8, color='red')
-        plt.text(x_pos, y_q3, f'{y_q3:.2f}', verticalalignment='bottom', fontsize=8, color='red')
-        plt.text(x_pos, y_med, f'{y_med:.2f}', verticalalignment='center', fontsize=8, color='red')
 
-    plt.title('Análise exploratória - boxplot')
-    plt.xlabel('Marca')
-    plt.ylabel('Valor da cerveja (R$)')
+        plt.text(
+            x_pos,
+            y_min,
+            f"{y_min:.2f}",
+            verticalalignment="top",
+            fontsize=8,
+            color="red",
+        )
+        plt.text(
+            x_pos,
+            y_max,
+            f"{y_max:.2f}",
+            verticalalignment="bottom",
+            fontsize=8,
+            color="red",
+        )
+        plt.text(
+            x_pos, y_q1, f"{y_q1:.2f}", verticalalignment="top", fontsize=8, color="red"
+        )
+        plt.text(
+            x_pos,
+            y_q3,
+            f"{y_q3:.2f}",
+            verticalalignment="bottom",
+            fontsize=8,
+            color="red",
+        )
+        plt.text(
+            x_pos,
+            y_med,
+            f"{y_med:.2f}",
+            verticalalignment="center",
+            fontsize=8,
+            color="red",
+        )
+
+    plt.title("Análise exploratória - boxplot")
+    plt.xlabel("Marca")
+    plt.ylabel("Valor da cerveja (R$)")
     plt.show()
+
 
 def main():
 
-    parser = argparse.ArgumentParser(description="Lê um arquivo Excel e imprime na tela.")
-    parser.add_argument("--excel_path", help="Caminho do arquivo Excel para ser lido.", default="./doc/BASE DADOS_DESAFIO INDIVIDUAL.xlsx")
+    parser = argparse.ArgumentParser(
+        description="Lê um arquivo Excel e imprime na tela."
+    )
+    parser.add_argument(
+        "--excel_path",
+        help="Caminho do arquivo Excel para ser lido.",
+        default="./doc/BASE DADOS_DESAFIO INDIVIDUAL.xlsx",
+    )
     args = parser.parse_args()
 
     def filter_excel(df, filters):
@@ -183,7 +260,7 @@ def main():
     #             lambda df: df["C03 - VIDRO 600ML RET"].notna(),
     #             lambda df: df["Seg"] == 2,
     #             lambda df: df["Produto"] == "CERVEJA"]
-    
+
     # filter_2 = [lambda df: df['Marca'] == "ANTARCTICA PILSEN",
     #             lambda df: df["C03 - VIDRO 600ML RET"].notna(),
     #             lambda df: df["Seg"] == 2,
@@ -192,11 +269,38 @@ def main():
     # amstel_lager = filter_excel(dataframe, filter_1)
     # antarctica_pilsen = filter_excel(dataframe, filter_2)
 
-    gasolina = pd.DataFrame([6.32, 5.3, 6.29, 5.48, 5.62, 6.18, 5.95, 5.95,
-                             5.72, 5.64, 5.63, 5.38,
-                             5.72, 5.49, 5.62, 5.51,
-                             5.72, 5.82, 5.92, 5.59, 5.68, 5.58, 5.78, 5.8,
-                             5.72, 5.89, 5.78], columns=["GASOLINA"])
+    gasolina = pd.DataFrame(
+        [
+            6.32,
+            5.3,
+            6.29,
+            5.48,
+            5.62,
+            6.18,
+            5.95,
+            5.95,
+            5.72,
+            5.64,
+            5.63,
+            5.38,
+            5.72,
+            5.49,
+            5.62,
+            5.51,
+            5.72,
+            5.82,
+            5.92,
+            5.59,
+            5.68,
+            5.58,
+            5.78,
+            5.8,
+            5.72,
+            5.89,
+            5.78,
+        ],
+        columns=["GASOLINA"],
+    )
     dados = RaizNCalculator(gasolina, "GASOLINA")
 
     print(dados)

@@ -1,4 +1,4 @@
-'''A idade de Dona Mônica'''
+"""A idade de Dona Mônica"""
 
 m = int(input())
 a = int(input())

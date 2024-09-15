@@ -1,8 +1,8 @@
-'''Resto 1.0'''
+"""Resto 1.0"""
 
-a= int(input())
-b=int(input())
+a = int(input())
+b = int(input())
 
-resto=a%b
+resto = a % b
 
-print(f'{resto}')
+print(f"{resto}")

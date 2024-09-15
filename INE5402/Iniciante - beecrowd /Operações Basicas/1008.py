@@ -1,8 +1,8 @@
-funcionarios=int(input())
-trabalhadas=int(input())
-salario=float(input())
+funcionarios = int(input())
+trabalhadas = int(input())
+salario = float(input())
 
-salary= trabalhadas*salario
+salary = trabalhadas * salario
 
-print(f'NUMBER = {funcionarios}')
-print(f'SALARY = U$ {salary:.2f}')
+print(f"NUMBER = {funcionarios}")
+print(f"SALARY = U$ {salary:.2f}")

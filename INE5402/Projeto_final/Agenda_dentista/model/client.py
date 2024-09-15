@@ -1,5 +1,6 @@
 from model.user import User
 
+
 # Classe filha de User, que representa um cliente do sistema.
 # Como diferencial, o cliente tem o CPF
 class Client(User):
@@ -10,6 +11,6 @@ class Client(User):
 
     def get_cpf(self):
         return self.cpf
-    
+
     def set_cpf(self, cpf):
         self.cpf = cpf

@@ -1,9 +1,8 @@
-
 vocabulario = {
-    'oposicao': 'mas',
-    'contrariedade': 'mas', 
-    'quantidade': 'mais',
-    'intensidade': 'mais'
+    "oposicao": "mas",
+    "contrariedade": "mas",
+    "quantidade": "mais",
+    "intensidade": "mais",
 }
 
 palavra = input()

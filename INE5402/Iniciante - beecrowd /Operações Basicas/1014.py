@@ -1,6 +1,6 @@
-x=int(input())
-y=float(input())
+x = int(input())
+y = float(input())
 
-consumo=x/y
+consumo = x / y
 
-print(f'{consumo:.3f} km/l')
+print(f"{consumo:.3f} km/l")
