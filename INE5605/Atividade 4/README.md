@@ -1,7 +1,7 @@
 
 Exercício 04: abstração, associação, agregação, composição e manipulação de listas.
 
-<img src="URL.jpg">
+<img src="URL.png">
 
 <br>
 <b> Considerações:</b> 
