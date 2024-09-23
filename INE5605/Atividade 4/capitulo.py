@@ -1,8 +1,20 @@
 class Capitulo:
     def __init__(self, numero: int, titulo: str):
-        ...
+        self.__numero = numero
+        self.titulo = titulo
 
-    ... Adicionar demais getters
+    @property
+    def numero(self):
+        return self.__numero
 
+    @numero.setter
+    def numero(self, numero):
+        self.__numero = numero
 
-    ... Adicionar demais setters
+    @property
+    def titulo(self):
+        return self.__titulo
+
+    @titulo.setter
+    def titulo(self, titulo):
+        self.__titulo = titulo
