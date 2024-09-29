@@ -21,7 +21,9 @@ class Livro:
         self.__numero_capitulo = numero_capitulo
         self.__titulo_capitulo = titulo_capitulo
         self.__autores = [autor]  # Lista de autores
-        self.__capitulos = [Capitulo(numero_capitulo, titulo_capitulo)]  # Lista de capítulos
+        self.__capitulos = [
+            Capitulo(numero_capitulo, titulo_capitulo)
+        ]  # Lista de capítulos
 
     @property
     def codigo(self):
