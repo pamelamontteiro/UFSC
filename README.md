@@ -12,3 +12,4 @@ Esse repositório contém os arquivos produzidos em todas as disciplinas cursada
 | INE5405 | [Probabilidade e Estatística](https://github.com/pamelamontteiro/UFSC/tree/main/INE5405) |
 | INE5404 | [Programação Orientada de Objetos](https://github.com/pamelamontteiro/UFSC/tree/main/INE5605) |
 | INE5406 | [Sistemas Digitais](https://github.com/pamelamontteiro/UFSC/tree/main/INE5406) |
+| INE5407 | [Ciência, Tecnologia e Sociedade](https://github.com/pamelamontteiro/UFSC/tree/main/INE5407) |
