@@ -1,4 +1,3 @@
-
 from aluno import Aluno
 
 
@@ -14,7 +13,7 @@ class AlunoPosGraduacao(Aluno):
     @elaborando_tese.setter
     def elaborando_tese(self, elaborando_tese: bool):
         if not isinstance(elaborando_tese, bool):
-            print('AlunoPosGraduacao.elaborando_tese deve ser um boolean')
+            print("AlunoPosGraduacao.elaborando_tese deve ser um boolean")
             return
         if elaborando_tese:
             self.dias_de_emprestimo *= 2
