@@ -114,7 +114,7 @@ e conhecimentos obtidos durante o curso. O circuito vai implementar a um jogo in
 
 | Código  | Disciplina                | Nota | Funciona|
 | ------  | :-----------------------: | ---- | ------- |
-| Projeto final    | [Projeto Final ](https://github.com/pamelamontteiro/UFSC/tree/main/EEL5105/Projeto%20Final) | Nota: 10 | Sim |
+| Projeto final    | [Projeto Final ](https://github.com/pamelamontteiro/UFSC/tree/main/EEL5105/Jogo%20das%20sequencias/ARQUIVOS%20VHDL) | Nota: 10 | Sim |
 
 #
 <img src="Diagrama_Circuitos.jpeg">
