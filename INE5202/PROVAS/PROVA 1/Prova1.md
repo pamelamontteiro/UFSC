@@ -1,4 +1,6 @@
-# PROVA 1 (2023.1) - Cálculo Numérico em Computadores
+# PROVA 1 (2023.2) - Cálculo Numérico em Computadores
+
+<b> Aluna: Pamela Santos monteiro </b>
 
 # QUESTÃO 1
 
