@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "parte 5"
+version = "0.1.0"
+description = ""
+authors = ["Pamela Monteiro <pamela.csmonteiro@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.1.1"
+numpy = "^2.1.3"
+matplotlib = "^3.9.2"
+jupyterlab = "^4.3.0"
+scipy = "^1.14.1"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
