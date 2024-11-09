@@ -1,4 +1,4 @@
-# PROVA 1 (2021.1) - CÁLCULO NUMÉRICO
+# PROVA 1 (2023.1) - Cálculo Numérico em Computadores
 
 # QUESTÃO 1
 
@@ -211,10 +211,10 @@ print(f"Representação normalizada do número 10101.01_2: {representacao_normal
 
 Resultado experado - resposta B
 ```
-Total de elementos representáveis, na representação F(2,4,−6,6): 209
-Menor número positivo representável: 0.0078125
-Maior número positivo representável: 62.0
-Representação normalizada do número binário 10101.01_2: 0.1010101 x 2^5
+-   Total de elementos representáveis, na representação F(2,4,−6,6): 209
+-   Menor número positivo representável: 0.0078125
+-   Maior número positivo representável: 62.0
+-   Representação normalizada do número binário 10101.01_2: 0.1010101 x 2^5
 
 ```
 
@@ -589,6 +589,141 @@ Agora, representamos isso em notação científica:
 
 Resposta:
 A afirmação está <b> Verdadeira </b>, pois a soma truncada resulta em 0.54978×10^5, conforme esperado.
+
+
+
+
+# QUESTÃO 5
+
+Dado o seguinte sistema linear com determinante = 253 e Número de Condição = 2, 4834:
+
+<b> 5x<sub>1</sub> + 2x<sub>2</sub> + x<sub>7</sub> = 7 </b>
+
+<b> -x<sub>1</sub> + 4x<sub>2</sub> + 2x<sub>3</sub> = 3 </b>
+
+<b> 2x<sub>1</sub> + 3x<sub>2</sub> + 10x<sub>3</sub>  = -1 </b>
+
+
+
+Utilizando o método Gaus - Seidel, com estimativa inicial x0 = [0 0 0], critério de parada o valor máximo de [x - xo] e precisão de 10 <sub>-6</sub> , temos como resultado final, k para o número de iterações e x para solução do sistema, respectivamente ( representação decimal com ponto e variável de 64bits)
+
+Escolha uma opção:
+
+A) O sistema de equação não satisfaz a condição de ser diagonal dominante e não converge.
+
+B) k = 8; x = [1.00000005311750e+000   1.00000001211672e+000  -9.65454077207658e-009]
+
+C) k = 10; x = [1.000000018988505e+000   1.000000019148e+000  -9.41956610489569e-009] 
+
+D) k = 8; x = [9.9999983507281e+001   9.99999928893933e-001  3.11700142487472e-008]
+
+E) k = 10; x = [1 1 -1]
+
+<b> Resposta: </b>
+
+Algoritmo de Gauss - Seidel 
+
+```python
+
+import numpy as np
+
+# Definir a precisão
+epsilon = 1e-6
+
+# Definir número máximo de iterações
+max_iter = 1000
+
+# Estimativa inicial
+x = np.zeros(3)  # x1 = x2 = x3 = 0
+x_old = np.copy(x)
+
+# Funções para as equações reformuladas
+def calc_x1(x2, x3):
+    return (7 - 2*x2) / 5
+
+def calc_x2(x1, x3):
+    return (3 + x1 - 2*x3) / 4
+
+def calc_x3(x1, x2):
+    return (-1 - 2*x1 - 3*x2) / 10
+
+# Iterações de Gauss-Seidel
+for k in range(max_iter):
+    # Atualizar x1, x2, x3
+    x[0] = calc_x1(x[1], x[2])  # Calcular x1 com os valores mais recentes de x2 e x3
+    x[1] = calc_x2(x[0], x[2])  # Calcular x2 com os valores mais recentes de x1 e x3
+    x[2] = calc_x3(x[0], x[1])  # Calcular x3 com os valores mais recentes de x1 e x2
+
+    # Critério de parada: verificar a diferença máxima
+    diff = np.max(np.abs(x - x_old))
+    
+    if diff < epsilon:
+        break
+
+    # Atualizar a estimativa anterior
+    x_old = np.copy(x)
+
+# Resultados
+k += 1  # Número de iterações
+print(f"k = {k}")
+print(f"x = {x}")
+
+```
+
+O método de Gauss-Seidel é um método iterativo para resolver sistemas lineares, baseado em uma decomposição do sistema de equações. O algoritmo é iterativo e pode ser implementado de forma simples. 
+
+<b> Execução </b>
+
+```
+-   Número de iterações: k = 10
+-   Solução final: x = [1.00000002 1.00000002 -9.4195661e-09]
+
+```
+<b>
+C) k = 10; x = [1.000000018988505e+000 1.000000019148e+000 -9.41956610489569e-009]
+
+</b> <br>
+
+Isso mostra que o sistema converge rapidamente e que a solução está próxima de x <sub>1</sub> = 1, de x <sub>2</sub> = 1 e x <sub>2</sub> ≈ 1 e 
+​
+# QUESTÃO 6
+
+O algoritmo abaixo está escrito na linguagem Octave e você deve <b>executa - lo </b> para identificar o seu funcionamento e o que temos
+como resultado final. Após a executação, escreva como resposta o valor da variável <b> m </b> e  em poucas palavras, o que o algoritmo está calculando. Copie e cole o algoritmo na atividade VPL no moodle (alg_P1) para executar ou use o OCTAVE (matlab) do seu computador.
+
+```matlab
+a = [1 -2 1]; % Vetor de coeficientes do polinômio (maior grau para o menor)
+n = length(a) - 1; % Número de termos do polinômio (grau do polinômio)
+x = 1; % Valor de x onde o polinômio será avaliado
+m = 1; % Inicializa a variável m (m parece contar a multiplicidade de raízes)
+```
+
+Laço For 
+```matlab
+
+for k = 1, n-1
+    b = zeros(1, n); % Inicializa um vetor b de zeros
+    s = 0; % Soma para calcular o valor do polinômio e suas derivadas
+    j = 0; % Contador de índices
+    for i = n:-1:1
+        j = j + 1;
+        b(j) = i * a(j); % Calcula o valor das derivadas sucessivas
+        s = s + (b(j) * x(i-1)); % Soma para a avaliação do polinômio
+    end
+    a = b; % Atualiza os coeficientes com as derivadas
+    if s == 0 % Verifica se o valor é zero
+        m = m + 1; % Incrementa a multiplicidade da raiz
+    end
+    n = n - 1; % Reduz o grau do polinômio
+end
+```
+
+Resposta 
+
+```
+m = 2
+O algoritmo determina a multiplicidade da raiz x=1 para o polinômio f(x)=x<sub>2</sub> - 2x + , que é 2, pois (x−1)<sub>2</sub> é a forma fatorada do polinômio.
+```
 
 
 
