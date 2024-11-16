@@ -1,1 +1,0 @@
-# usando aproximação de derivada (Fazer?)
