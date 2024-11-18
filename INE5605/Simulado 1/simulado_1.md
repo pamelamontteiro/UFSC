@@ -44,8 +44,7 @@ O estilo do código de todas as classes deve estar de acordo com o pep8.
 
 <b>  Veja o Diagrama de Classe: </b> 
 
-<img src="
-Diagrama_Prova_2024-1_v2.jpg">
+<img src="Diagrama_Prova_2024-1_v2.jpg">
 
 
 #
