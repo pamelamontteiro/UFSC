@@ -12,6 +12,6 @@ Esse repositório contém os arquivos produzidos em todas as disciplinas cursada
 | INE5202 | [Cálculo numérico em computadores](https://github.com/pamelamontteiro/UFSC/tree/main/INE5202) | 2023 -2 |
 | INE5402 | [Programação Orientada de Objetos](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402) |  2024 -1 | [Agenda de Dentista](https://github.com/pamelamontteiro/Agenda_dentista)
 | INE5405 | [Probabilidade e Estatística](https://github.com/pamelamontteiro/UFSC/tree/main/INE5405) | 2024 -1 |
-| INE5403 | [	Fundamentos de Matemática Discreta para Computação](https://github.com/pamelamontteiro/UFSC/tree/main/INE5605) | 2024 - 2 | [Otimização de rotas de transporte publico através da teoria dos grafos)]()
+| INE5403 | [	Fundamentos de Matemática Discreta para Computação](https://github.com/pamelamontteiro/UFSC/tree/main/INE5403) | 2024 - 2 | [Otimização de rotas de transporte publico através da teoria dos grafos)](https://github.com/pamelamontteiro/UFSC/tree/main/INE5403/Trabalho%20Final)
 | INE5404 | [Programação Orientada de Objetos II](https://github.com/pamelamontteiro/UFSC/tree/main/INE5605) | 2024 - 2 | [Sistema de Adoção de Pets (ONGs)](https://github.com/pamelamontteiro/sistema-adocao-DSO1)
 
