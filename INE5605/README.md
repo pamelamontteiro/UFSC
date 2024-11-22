@@ -33,18 +33,18 @@ de programação orientada a objetos.
 Este repositório contém exemplos de código, projetos e soluções de problemas que refletem o aprendizado e a aplicação desses conceitos durante o semestre.
 
 ### Exercícios
-- [x] Atividade 1
-- [x] Atividade 2
-- [x] Atividade 3
-- [x] Atividade 4
-- [x] Atividade 5
-- [x] Atividade 6
-- [x] Atividade 7
-- [x] Atividade 8
+- [x] Atividade 1(https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Atividade%201)
+- [x] Atividade 2 (https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Atividade%202)
+- [x] Atividade 3 (https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Atividade%203)
+- [x] Atividade 4 (https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Atividade%204)
+- [x] Atividade 5 (https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Atividade%205)
+- [x] Atividade 6 (https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Atividade%206)
+- [x] Atividade 7 (https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Atividade%207)
+- [x] Atividade 8 (https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Atividade%208)
 
 ### Trabalhos
-- [x] Trabalho 1
+- [x] Trabalho 1 (https://github.com/pamelamontteiro/sistema-adocao-DSO1)
 - [ ] Trabalho 2
 
 ### Simulado 1
-- [x] Simulado 1
+- [x] Simulado 1 https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Simulado%201)
