@@ -7,11 +7,16 @@ Esse repositório contém os arquivos produzidos em todas as disciplinas cursada
 
 | Código  | Disciplina                | Semestre | Trabalho Final |
 | ------  | :-----------------------: | :--------: | :-------------: |
-| EEL5101 | [Circuitos e Técnicas Digitais](https://github.com/pamelamontteiro/UFSC/tree/main/EEL5105) | 2023 -2 | [Jogo das sequencias](https://github.com/pamelamontteiro/UFSC/tree/main/EEL5105/Jogo%20das%20sequencias)|
-| INE5407 | [Ciência, Tecnologia e Sociedade](https://github.com/pamelamontteiro/UFSC/tree/main/INE5407) | 2023 - 2|
-| INE5202 | [Cálculo numérico em computadores](https://github.com/pamelamontteiro/UFSC/tree/main/INE5202) | 2023 -2 |
-| INE5402 | [Programação Orientada de Objetos](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402) |  2024 -1 | [Agenda de Dentista](https://github.com/pamelamontteiro/Agenda_dentista)
-| INE5405 | [Probabilidade e Estatística](https://github.com/pamelamontteiro/UFSC/tree/main/INE5405) | 2024 -1 |
-| INE5403 | [	Fundamentos de Matemática Discreta para Computação](https://github.com/pamelamontteiro/UFSC/tree/main/INE5403) | 2024 - 2 | [Otimização de rotas de transporte publico através da teoria dos grafos)](https://github.com/pamelamontteiro/UFSC/tree/main/INE5403/Trabalho%20Final)
-| INE5404 | [Programação Orientada de Objetos II](https://github.com/pamelamontteiro/UFSC/tree/main/INE5605) | 2024 - 2 | [Sistema de Adoção de Pets (ONGs)](https://github.com/pamelamontteiro/sistema-adocao-DSO1)
+| EEL5101 | [Circuitos e Técnicas Digitais](https://github.com/pamelamontteiro/UFSC/tree/main/EEL5105) | 1° Fase| [Jogo das sequencias](https://github.com/pamelamontteiro/UFSC/tree/main/EEL5105/Jogo%20das%20sequencias)|
+| INE5402 | [Programação Orientada de Objetos](https://github.com/pamelamontteiro/UFSC/tree/main/INE5402) |   1° Fase | [Agenda de Dentista](https://github.com/pamelamontteiro/Agenda_dentista)
+| INE5403 | [	Fundamentos de Matemática Discreta para Computação](https://github.com/pamelamontteiro/UFSC/tree/main/INE5403) | 1° Fase| [Otimização de rotas de transporte publico através da teoria dos grafos)](https://github.com/pamelamontteiro/UFSC/tree/main/INE5403/Trabalho%20Final)
+| INE5407 | [Ciência, Tecnologia e Sociedade](https://github.com/pamelamontteiro/UFSC/tree/main/INE5407) |  2° Fase|
+| INE5404 | [Programação Orientada de Objetos II](https://github.com/pamelamontteiro/UFSC/tree/main/INE5605) | 2° Fase | [Sistema de Adoção de Pets (ONGs)](https://github.com/pamelamontteiro/sistema-adocao-DSO1)
+| INE5202 | [Cálculo numérico em computadores](https://github.com/pamelamontteiro/UFSC/tree/main/INE5202) | 3° Fase |
+| INE5405 | [Probabilidade e Estatística](https://github.com/pamelamontteiro/UFSC/tree/main/INE5405) | 5° Fase|
 
+<br>
+
+
+# Árvore de disciplinas da Ciencias da computação -  UFSC
+<img src="Árvore de Disciplinas.jpg">
