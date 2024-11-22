@@ -14,9 +14,15 @@ Esse repositório contém os arquivos produzidos em todas as disciplinas cursada
 | INE5404 | [Programação Orientada de Objetos II](https://github.com/pamelamontteiro/UFSC/tree/main/INE5605) | 2° Fase | [Sistema de Adoção de Pets (ONGs)](https://github.com/pamelamontteiro/sistema-adocao-DSO1)
 | INE5202 | [Cálculo numérico em computadores](https://github.com/pamelamontteiro/UFSC/tree/main/INE5202) | 3° Fase |
 | INE5405 | [Probabilidade e Estatística](https://github.com/pamelamontteiro/UFSC/tree/main/INE5405) | 5° Fase|
+| INE5428 | [Informática e Sociedade ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5428) | 7° Fase|
+<br><br><br>
 
-<br>
 
-
-# Árvore de disciplinas da Ciencias da computação -  UFSC
+# Árvore de disciplinas da Ciencias da computação -  UFSC<br>
 <img src="Árvore de Disciplinas.jpg">
+
+
+
+<br><br>
+# Links da UFSC
+* [Curriculo do Curso](https://cagr.sistemas.ufsc.br/relatorios/curriculoCurso?curso=208&curriculo=20071)
