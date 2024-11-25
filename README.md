@@ -1,8 +1,11 @@
-# UFSC
+<h1 align="center">
+  <strong>🎓 Ciência da Computação - UFSC</strong>
+</h1>
+<p align="center">Esse repositório contém o conteúdo estudado durante o curso de Ciência da Computação na Universidade Federal de Santa Catarina.</p>
 
-Esse repositório contém os arquivos produzidos em todas as disciplinas cursadas - Ciência da Computação - Universidade Federal de Santa Catarina.
-
-### Disciplinas da Graduação
+<h2 align="center">
+  <strong>🚀 Disciplinas da Graduação</strong>
+</h2>
 
 
 | Código  | Disciplina                | Semestre | Trabalho Final |
