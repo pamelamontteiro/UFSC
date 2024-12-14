@@ -30,26 +30,36 @@ de programação orientada a objetos.
 - Arquiteturas em Camadas e padrões de projeto
 - Construção de sistemas de software que demonstrem as características básicas da orientação a objetos.
 
-Este repositório contém exemplos de código, projetos e soluções de problemas que refletem o aprendizado e a aplicação desses conceitos durante o semestre.
 
 
 ### Material de Estudo 
 [-  Material de Estudo](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Material%20de%20Estudo)
 
+#
 
-### Exercícios
-- [[x] Atividade 1](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%201)
-- [[x] Atividade 2](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%202)
-- [[x] Atividade 3](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%203)
-- [[x] Atividade 4](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%204)
-- [[x] Atividade 5](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%205)
-- [[x] Atividade 6](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%206)
-- [[x] Atividade 7](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%207)
-- [[x] Atividade 8](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%208)
+Este repositório contém os exercícios de programação realizados durante o semestre. Abaixo estão as informações importantes para o acompanhamento e entrega dos exercícios.
+
+
+### Atividade Avaliativas
+| Código  | Atividade - INE5605      | Nota | Funciona|
+| ------  | :-----------------------: | ---- | ------- |
+| EX 1    | [Atividade 1 ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%201) | Nota: 10 | Sim |
+| Ex 2    | [Atividade 2 ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%202) | Nota: 10 | Sim |
+| Ex 3   | [Atividade 3 ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%203) | Nota: 10 | Sim |
+| Ex 4   | [Atividade 4 ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%204) | Nota: 10 | Sim |
+| Ex 5   | [Atividade 5 ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%205) | Nota: 10 | Sim |
+| Ex 6   | [Atividade 6 ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%206) | Nota: 10 | Sim |
+| Ex 7   | [Atividade 7 ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%207) | Nota: 10 | Sim |
+| Ex 8   | [Atividade 7 ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Atividade%208) | Nota: 10 | Sim |
+
 
 ### Trabalhos
-- [[x] Trabalho 1](https://github.com/pamelamontteiro/sistema-adocao-DSO1)
-- [ ] Trabalho 2
+| Código  | Trabalho - INE5605      | Nota | Funciona|
+| ------  | :-----------------------: | ---- | ------- |
+| Trabalho 1    | [Trabalho 1 ](https://github.com/pamelamontteiro/sistema-adocao-DSO1) | Nota: 10 | Sim |
+| Trabalho 2    | [Trabalho 2 ](https://github.com/pamelamontteiro/AdocaoPetsPOO) | Nota: 10 | Sim |
 
 ### Simulado 1
-- [[x] Simulado 1](https://github.com/pamelamontteiro/UFSC/tree/main/INE5605/Simulado%201)
+| Código  | Simulado Teste - INE5605      | Nota | Funciona|
+| ------  | :-----------------------: | ---- | ------- |
+| Simulado    | [Simulado ](https://github.com/pamelamontteiro/UFSC/tree/main/INE5404/Simulado%201) | Nota: 10 | Sim |
